@@ -95,26 +95,8 @@ digits_in_freq(begin = int(input('Начало: ')), end = int(input('Конец
 # XOR шифрование, на входе сообщение (строка) и ключ шифрования (строка), на выходе зашифрованное сообщение (строка). 
 # XOR расшифровывание, на входе зашифрованное сообщение (строка) и ключ (строка), на выходе исходное сообщение (строка).
 
- 
-# def encode(text, step):
-#     return text.translate(
-#         str.maketrans(secret, secret[step:] + secret[:step]))
- 
-# def decode(text, step):
-#     return text.translate(
-#         str.maketrans(secret[step:] + secret[:step], secret))
-
-# text = input('Введите текст: ')
-# secret = u'абвгдеёжзийклмнопрстуфхцчшщьъэюя'
-# # secret = input('Введите ключ: ')
-# step = 3
-
-# encode = encode(text, step)
-# print(encode)
-
-# decode = decode(encode, step)
-# print(decode)
-
+# 
+#========================================================================
 
 # import math
 
