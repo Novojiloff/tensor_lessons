@@ -27,26 +27,27 @@
 #========================================================================
 # Частота использования цифр в диапазоне чисел.
 
-# def digits_in_freq(begin, end):
-#     if begin > end:
-#         print('Ошибка: начало не может быть больше конца.')
-#         return
+def digits_in_freq(begin, end):
+    if begin < end:
+        step = 1
+    else:
+        step = -1
 
-#     all_freq = {}
+    all_freq = {}
 
-#     for i in range(begin, end + 1):
-#         string = str(i)
+    for i in range(begin, end + 1, step):
+        string = str(i)
 
-#         for digit in string:
-#             if digit in all_freq:
-#                 all_freq[digit] += 1
-#             else:
-#                 all_freq[digit] = 1
-#     for key in sorted(all_freq):
-#         print(f'{key} встречается {all_freq[key]} раз(а)')
-    
+        for digit in string:
+            if digit in all_freq:
+                all_freq[digit] += 1
+            else:
+                all_freq[digit] = 1
+    for key in sorted(all_freq):
+        print(f'{key} встречается {all_freq[key]} раз(а)')
 
-# digits_in_freq(begin = int(input('Начало: ')), end = int(input('Конец: ')))
+
+digits_in_freq(begin = int(input('Начало: ')), end = int(input('Конец: ')))
 
 
 
